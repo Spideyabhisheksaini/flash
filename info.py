@@ -50,8 +50,8 @@ FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 
 # MongoDB information
-SECONDDB_URI = environ.get('SECONDDB_URI', "mongodb+srv://Flash2: Flash2@flash2.z1spi.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Flash: Flash@flash.w4skg.mongodb.net/?retryWrites=true&w=majority")
+SECONDDB_URI = environ.get('SECONDDB_URI', "mongodb+srv://Flash2:Flash2@flash2.z1spi.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Flash:Flash@flash.w4skg.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Flashdb")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
